@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
 import Button from "@/components/ui/Button";
@@ -10,22 +11,15 @@ export default function FounderPreview() {
       <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         {/* Portrait placeholder */}
         <Reveal>
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal to-deep">
-            <div className="grain" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-display text-7xl text-white/90">
-                {founder.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .slice(0, 2)
-                  .join("")}
-              </span>
-            </div>
-            {/* PLACEHOLDER: replace gradient block with a real photo of Suman
-                e.g. <Image src="/suman.jpg" fill className="object-cover" alt={founder.name} /> */}
-            <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-1.5 text-xs font-semibold text-deep">
-              Photo coming soon
-            </div>
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem] bg-deep">
+            <Image
+              src="/suman.jpg"
+              alt={`${founder.name}, ${founder.credentials}`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 384px"
+              className="object-cover object-top"
+            />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-deep/60 to-transparent" />
           </div>
         </Reveal>
 

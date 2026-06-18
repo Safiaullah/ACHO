@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/sections/PageHeader";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
@@ -62,21 +63,16 @@ export default function AboutPage() {
         <div className="grid items-start gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <Reveal>
             <div className="lg:sticky lg:top-28">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-gradient-to-br from-teal to-deep">
-                <div className="grain" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-display text-7xl text-white/90">
-                    {founder.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .slice(0, 2)
-                      .join("")}
-                  </span>
-                </div>
-                {/* PLACEHOLDER: replace with a real portrait of Suman */}
-                <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-1.5 text-xs font-semibold text-deep">
-                  Photo coming soon
-                </div>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-deep">
+                <Image
+                  src="/suman.jpg"
+                  alt={`${founder.name}, ${founder.credentials}`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-cover object-top"
+                  priority
+                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-deep/60 to-transparent" />
               </div>
               <div className="mt-5 rounded-2xl border border-black/5 bg-cream p-5">
                 <p className="font-display text-lg text-ink">{founder.name}</p>
