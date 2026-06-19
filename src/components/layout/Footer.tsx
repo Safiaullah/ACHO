@@ -30,7 +30,7 @@ export default function Footer() {
       {/* Main footer */}
       <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <Logo className="h-20 w-auto text-cream" />
+          <Logo onDark className="h-20 w-auto" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-light">
             {site.fullName}. {site.description}
           </p>
