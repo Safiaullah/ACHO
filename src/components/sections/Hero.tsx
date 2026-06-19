@@ -87,7 +87,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-8 text-sm text-muted-light">
-            In-clinic · In-home · Telehealth — {site.address.city} &amp; surrounding areas
+            In-clinic · In-home · Telehealth — New York metro &amp; surrounding areas
           </p>
         </div>
 

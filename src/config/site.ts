@@ -2,7 +2,7 @@
  * Central site configuration for ACHO.
  *
  * NOTE: Values marked `// PLACEHOLDER` should be replaced with real details
- * before launch (phone, email, address, social links, insurance carriers).
+ * before launch (social links, insurance carriers).
  */
 
 export const site = {
@@ -12,19 +12,11 @@ export const site = {
   description:
     "ACHO provides individualized, neurodiversity-affirming ABA therapy and behavioral support for children and families — led by board-certified behavior analysts.",
 
-  // PLACEHOLDER contact details
-  phone: "(555) 123-4567",
-  phoneHref: "tel:+15551234567",
-  email: "hello@achocare.com",
-  emailHref: "mailto:hello@achocare.com",
+  phone: "+1 (718) 310-7452",
+  phoneHref: "tel:+17183107452",
+  email: "ceo@acholba.com",
+  emailHref: "mailto:ceo@acholba.com",
 
-  // PLACEHOLDER location / service area
-  address: {
-    line1: "123 Care Avenue, Suite 200",
-    city: "Brooklyn",
-    state: "NY",
-    zip: "11201",
-  },
   serviceArea: "In-home, in-clinic & telehealth across the New York metro area",
 
   // PLACEHOLDER social

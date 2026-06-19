@@ -67,11 +67,7 @@ export default function Footer() {
                 {site.email}
               </a>
             </li>
-            <li className="pt-2 leading-relaxed">
-              {site.address.line1}
-              <br />
-              {site.address.city}, {site.address.state} {site.address.zip}
-            </li>
+            <li className="pt-2 leading-relaxed">{site.serviceArea}</li>
             <li className="pt-2">
               <a
                 href={site.social.linkedin}

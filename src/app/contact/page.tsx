@@ -70,15 +70,6 @@ export default function ContactPage() {
                 <p className="mt-2 leading-relaxed text-ink/85">
                   {site.serviceArea}
                 </p>
-                <p className="mt-3 text-sm text-muted">
-                  {site.address.line1}
-                  <br />
-                  {site.address.city}, {site.address.state} {site.address.zip}
-                </p>
-                <p className="mt-2 text-xs italic text-muted/70">
-                  (Address &amp; service area are placeholders — update before
-                  launch.)
-                </p>
               </div>
             </Reveal>
           </div>
