@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repo (`nobleblackcar`) now hosts **ACHO — Autism Clinical Health Organization**, a marketing/informational website for a BCBA-led ABA therapy practice (founder: Suman Mohammad Asra, M.A., LBA, BCBA). It is a Next.js 15 app built with TypeScript and Tailwind CSS v4 (App Router, React 19).
+This repo (local folder `/Users/samiramohammad/Projects/ACHOLBA`, GitHub `Safiaullah/ACHO`, live at acholba.com) hosts **ACHO — Autism Clinical Health Organization**, a marketing/informational website for a BCBA-led ABA therapy practice (founder: Suman Mohammad Asra, M.A., LBA, BCBA). It is a Next.js 15 app built with TypeScript and Tailwind CSS v4 (App Router, React 19).
 
 Design direction: information architecture inspired by corticacare.com (services, approach, about, resources/FAQ, contact) with the premium, interactive feel of jeskojets.com — a warm-but-premium hybrid theme (deep teal foundations + warm coral/gold accents on cream), immersive dark hero, and scroll-reveal animations.
 
@@ -20,7 +20,7 @@ Design direction: information architecture inspired by corticacare.com (services
 - `src/components/sections/` — page section blocks (Hero, ServicesPreview, ApproachPreview, ValuesSection, FounderPreview, Testimonials, PageHeader, FaqAccordion, ContactForm)
 
 ### Known gotchas
-- There are TWO `nobleblackcar` directories on this machine: this project at `/Users/samiramohammad/Projects/nobleblackcar` and an unrelated "NYC Black Car" project at `/Users/samiramohammad/nobleblackcar`. `.claude/launch.json` originally pointed the dev server at the wrong one — the `ACHO Dev (Turbopack)` config (port 3001) targets THIS project.
+- This project lives at `/Users/samiramohammad/Projects/ACHOLBA` (renamed from `nobleblackcar`). Note an unrelated "NYC Black Car" project still sits at `/Users/samiramohammad/nobleblackcar` (port 3000) — don't confuse them. The `ACHOLBA Dev (Turbopack)` config in `.claude/launch.json` (port 3001) targets THIS project.
 - The contact form (`ContactForm.tsx`) is front-end only — wire it to an email/form backend before launch.
 
 ## Development Commands
