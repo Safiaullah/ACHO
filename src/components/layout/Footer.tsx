@@ -3,8 +3,6 @@ import { nav, site } from "@/config/site";
 import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="relative overflow-hidden bg-deep text-cream">
       <div className="grain" />
@@ -85,7 +83,7 @@ export default function Footer() {
       <div className="relative border-t border-white/10 px-6 py-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-muted-light sm:flex-row">
           <p>
-            &copy; {year} {site.fullName}. All rights reserved.
+            &copy; 2022 {site.fullName}. All rights reserved.
           </p>
           <p>Compassionate, evidence-based autism care.</p>
         </div>
