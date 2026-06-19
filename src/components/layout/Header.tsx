@@ -44,7 +44,7 @@ export default function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6">
         <Link href="/" aria-label={`${site.name} home`} className="relative z-50">
           <Logo
-            className={`h-8 w-auto transition-colors duration-300 ${
+            className={`h-14 w-auto transition-colors duration-300 sm:h-16 ${
               lightText ? "text-cream" : "text-ink"
             }`}
           />
